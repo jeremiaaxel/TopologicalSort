@@ -1,2 +1,24 @@
 # Stima_Tucil2
 Repositori untuk Tugas Kecil 2 Strategi Algoritma Teknik Informatika ITB 2019
+
+## Deskripsi
+Aplikasi sederhana penyusun rencana pengambilan kuliah. Penyusunan rencana kuliah diimplementasikan dengan pendekatan _Topological Sorting_.
+Suatu mata kuliah bisa saja memiliki _prerequisite_/prasyarat. Untuk mengambil mata kuliah tersebut harus mengambil mata kuliah di prasyarat di semester sebelumnya terlebih dahulu.
+
+## Requirement/Instalasi
+1. Python
+
+## Cara Menggunakan Program
+1. Program dijalankan melalui terminal dengan menjalankan ```python src/main.py``` untuk Windows, OS lain menyesuaikan.
+2. Kemudian akan muncul _prompt_ untuk memasukan nama file, masukan nama file berisi daftar mata kuliah.
+    - File input berformat ```.txt```
+    - Satu file berformat :\
+      <kode_kuliah_1>, <kode kuliah prasyarat - 1>, <kode kuliah prasyarat - 2>, <kode kuliah prasyarat - 3>.\
+      <kode_kuliah_2>, <kode kuliah prasyarat - 1>, <kode kuliah prasyarat - 2>.\
+      <kode_kuliah_3>, <kode kuliah prasyarat - 1>, <kode kuliah prasyarat - 2>, <kode kuliah prasyarat - 3>, <kode kuliah prasyarat - 4>.\
+      <kode_kuliah_4>.
+3. Program akan berjalan dan memunculkan hasilnya.
+
+## Author
+NIM/Nama : 13519188/Jeremia Axel
+Kelas : 04
