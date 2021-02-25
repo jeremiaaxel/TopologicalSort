@@ -1,6 +1,7 @@
 # Stima_Tucil2
-Repositori untuk Tugas Kecil 2 Strategi Algoritma Teknik Informatika ITB 2019
-[Spek](https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2020-2021/Tugas-Kecil-2-(2021).pdf)
+Repositori untuk Tugas Kecil 2 Strategi Algoritma Teknik Informatika ITB 2019\
+[Spek](https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2020-2021/Tugas-Kecil-2-(2021).pdf)\
+[Laporan](https://docs.google.com/document/d/11fiLzSvk1A2qDVrRx1KDa0rc71nT3Ro1tpRWLva4SxY/edit#heading=h.o9xfu0d75rs9)
 
 ## Deskripsi
 Aplikasi sederhana penyusun rencana pengambilan kuliah. Penyusunan rencana kuliah diimplementasikan dengan pendekatan _Topological Sorting_.
