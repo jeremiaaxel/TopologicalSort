@@ -1,0 +1,24 @@
+Inget, makan, pempek, padat, bikin, capek.
+Buat, pempek, padat.
+Pempeknya, pempek, AUUUUUUUUUU.
+Upin, AUUUUUUUUUU.
+belom, Upin, test, makan, pempek.
+AAAAAAAAAAA.
+
+Ipin, UAAAAAAAAAA.
+AUUUUUUUUUU.
+terlalu, makan.
+test, terlalu, makan.
+
+belajar, bikin, Upin, Ipin.
+UAAAAAAAAAA.
+makan, AAAAAAAAAAA, AUUUUUUUUUU.
+
+buat, Buat, bikin, Ipin.
+case, Pempeknya, Ipin.
+BasDat, bikin, capek, MIAW.
+bikin, padat.
+padat, Upin.
+pempek, MIAW.
+MIAW.
+capek, makan, Pempeknya.
