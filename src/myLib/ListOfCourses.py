@@ -36,10 +36,10 @@ class ListOfCourses:
 
         self.__list_of_course = newCourses
     
-    def add(self, add_course) -> None:
+    def addCourse(self, add_course) -> None:
         self.__list_of_course.append(add_course)
 
-    def remove(self, removed_course) -> None:
+    def removeCourse(self, removed_course) -> None:
         self.__list_of_course.remove(removed_course)
 
     def has(self, search) -> bool:

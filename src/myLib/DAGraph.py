@@ -2,7 +2,7 @@ from myLib.ListOfCourses import ListOfCourses
 
 class DAGraph :
     ### Construct, Representation, and Destruct ###
-    def __init__(self, main="C0", preq=None) -> None:
+    def __init__(self, main, preq=None) -> None:
         self.__main = main
         self.__preq = ListOfCourses(preq)
     
@@ -47,7 +47,7 @@ class DAGraph :
         self.__preq.setCourses(newPreq)
     
     def add_this_to_preq(self, add_preq) -> None:
-        self.__preq.add(add_preq)
+        self.__preq.addCourse(add_preq)
 
     def remove_this_from_preq(self, removed_preq) -> None:
-        self.__preq.remove(removed_preq)
+        self.__preq.removeCourse(removed_preq)
