@@ -1,14 +1,14 @@
-from myLib.Prequisites import Prequisites
+from myLib.ListOfCourses import ListOfCourses
 
 class DAGraph :
     ### Construct, Representation, and Destruct ###
     def __init__(self, main="C0", preq=None) -> None:
         self.__main = main
-        self.__preq = Prequisites(preq)
+        self.__preq = ListOfCourses(preq)
     
     def __repr__(self):
         name = self.__main
-        if (len(self.__preq) > 0):
+        if (len(self.__preq.getCourses()) > 0):
             name += ", " + str(self.__preq)
         
         return name
@@ -44,7 +44,7 @@ class DAGraph :
         return self.__preq
 
     def setPreq(self, newPreq):
-        self.__preq.setPreq(newPreq)
+        self.__preq.setCourses(newPreq)
     
     def add_this_to_preq(self, add_preq) -> None:
         self.__preq.add(add_preq)

@@ -5,7 +5,7 @@ from pathlib import Path
 from os.path import join
 
 from myLib.DAGraph import DAGraph
-from myLib.Prequisites import Prequisites
+from myLib.ListOfCourses import ListOfCourses
 from myLib.FileParser import FileParser
 
 debug = True
@@ -32,34 +32,39 @@ del course_list
 
 print("Initial list of courses")
 for course in list_of_courses:
-    print(course)
+    print(course, end=".\n")
 
-list_of_course_plan = []
+list_of_courses_plan = []
 loop = 0
 while len(list_of_courses) > 0:
-    targets = []
+    targets = ListOfCourses()
     for course in list_of_courses:
         if len(course.getPreq()) == 0:
-            targets.append(course)
-            print("\nCurrently looking for: " + course.getMain())
+            targets.add(course.getMain())
+
+            # print("\nCurrently looking for: " + course.getMain())
+            
             list_of_courses.remove(course)
 
 
     if (len(targets) > 0):
-        list_of_course_plan.append(targets)
-        print("list_of_course_taken : ")
-        print(list_of_course_plan)
-        for target in targets:
-            for course in list_of_courses:
-                print(course.getMain() + " has prequisite : ", end="")
-                print(course.getPreq())
+        list_of_courses_plan.append(targets)
 
-                if (course.getPreq().has(target.getMain())):
-                    course.remove_this_from_preq(target.getMain())
+        # print("list_of_course_taken : ")
+        # print(list_of_courses_plan)
+
+        for target in targets.getCourses():
+            for course in list_of_courses:
+
+                # print(course.getMain() + " has prequisite : ", end="")
+                # print(course.getPreq())
+
+                if (course.getPreq().has(target)):
+                    course.remove_this_from_preq(target)
     else:
         print("No course with zero or taken prequisite found")
         break
 
 print()
-for i in range(len(list_of_course_plan)):
-    print("Semester {num} : {courses}".format(num=i+1, courses=list_of_course_plan[i]))
+for i in range(len(list_of_courses_plan)):
+    print("Semester {num} : {courses}.".format(num=i+1, courses=list_of_courses_plan[i]))
