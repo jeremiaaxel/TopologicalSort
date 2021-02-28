@@ -11,6 +11,8 @@ Suatu mata kuliah bisa saja memiliki _prerequisite_/prasyarat. Untuk mengambil m
 1. Python
 
 ## Cara Menggunakan Program
+### 1. Menggunakan manual
+Menjalankan program satu kali dan memasukan nama file secara manual
 1. Program dijalankan melalui terminal dengan menjalankan ```python src/main.py``` untuk Windows, OS lain menyesuaikan.
 2. Kemudian akan muncul _prompt_ untuk memasukan nama file, masukan nama file berisi daftar mata kuliah.
     - File input berformat ```.txt```
@@ -20,6 +22,11 @@ Suatu mata kuliah bisa saja memiliki _prerequisite_/prasyarat. Untuk mengambil m
       <kode_kuliah_3>, <kode kuliah prasyarat - 1>, <kode kuliah prasyarat - 2>, <kode kuliah prasyarat - 3>, <kode kuliah prasyarat - 4>.\
       <kode_kuliah_4>.
 3. Program akan berjalan dan memunculkan hasilnya.
+
+### 2. Menggunakan script
+Menjalankan program sebanyak test case pada folder `test` secara langsung berurutan.
+1. Program dijalankan di terminal dengan menjalankan ``` python runner.py``` untuk Windows, OS lain menyesuaikan. Atau dapat juga dengan menjalankan `runner.py` secara langsung.
+2. Program akan berjalan dan menampikan semua hasil dari _test case_ yang ada di folder `test`. Ubah isi folder `test` untuk mengubah hasil.
 
 ## Author
 NIM/Nama : 13519188/Jeremia Axel
