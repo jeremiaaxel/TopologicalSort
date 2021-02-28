@@ -6,8 +6,8 @@ import sys
 from pathlib import Path
 from os.path import join
 
-from myLib import FileParser
-from myLib.DAGraph import DAGraph
+from myLib import FileParser_13519188 as FileParser
+from myLib.DAGraph_13519188 import DAGraph
 
 def get_courses_str(list_of_courses) -> str:
     '''

@@ -1,4 +1,4 @@
-from myLib.ListOfCourses import ListOfCourses
+from myLib.ListOfCourses_13519188 import ListOfCourses
 
 class DAGraph :
     ### Construct, Representation, and Destruct ###
@@ -25,13 +25,11 @@ class DAGraph :
 
     ### Printing ###
     def print(self) -> None:
-        print("{main}".format(main=self.__main), end="")
-
-        # print(self.preq)
-        for item in self.__preq:
-            print(", {preq}".format(preq=item), end="")
+        name = self.__main
+        if (len(self.__preq) > 0):
+            name += ", " + str(self.__preq)
         
-        print(".", end="\n")
+        print("{name}.".format(name=name), end="\n")
 
     ### Getter and Setter ###
     def getMain(self):

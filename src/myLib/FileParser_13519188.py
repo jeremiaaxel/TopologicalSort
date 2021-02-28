@@ -8,9 +8,9 @@ def remove_excess_whitespace(word):
     j = len(word)-1
     while word[j] == " ":
         j -= 1
-    for k in range(j-i+1):
-        new_word = word[i:j+1]
-    return new_word
+
+    return word[i:j+1]
+    
 
 def file_to_list_of_courses(filename, test_dir=None) -> list:
     '''

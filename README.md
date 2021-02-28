@@ -1,7 +1,7 @@
 # Stima_Tucil2
+## Nguli Planner
 Repositori untuk Tugas Kecil 2 Strategi Algoritma Teknik Informatika ITB 2019\
-[Spek](https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2020-2021/Tugas-Kecil-2-(2021).pdf)\
-[Laporan](https://docs.google.com/document/d/11fiLzSvk1A2qDVrRx1KDa0rc71nT3Ro1tpRWLva4SxY/edit#heading=h.o9xfu0d75rs9)
+[Spek](https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2020-2021/Tugas-Kecil-2-(2021).pdf)
 
 ## Deskripsi
 Aplikasi sederhana penyusun rencana pengambilan kuliah. Penyusunan rencana kuliah diimplementasikan dengan pendekatan _Topological Sorting_.
@@ -13,7 +13,7 @@ Suatu mata kuliah bisa saja memiliki _prerequisite_/prasyarat. Untuk mengambil m
 ## Cara Menggunakan Program
 ### 1. Menggunakan manual
 Menjalankan program satu kali dan memasukan nama file secara manual
-1. Program dijalankan melalui terminal dengan menjalankan ```python src/main.py``` untuk Windows, OS lain menyesuaikan.
+1. Program dijalankan melalui terminal dengan menjalankan ```python src/13519188.py``` untuk Windows, OS lain menyesuaikan.
 2. Kemudian akan muncul _prompt_ untuk memasukan nama file, masukan nama file berisi daftar mata kuliah.
     - File input berformat ```.txt```
     - Satu file berformat :\
@@ -25,7 +25,7 @@ Menjalankan program satu kali dan memasukan nama file secara manual
 
 ### 2. Menggunakan script
 Menjalankan program sebanyak test case pada folder `test` secara langsung berurutan.
-1. Program dijalankan di terminal dengan menjalankan ``` python runner.py``` untuk Windows, OS lain menyesuaikan. Atau dapat juga dengan menjalankan `runner.py` secara langsung.
+1. Program dijalankan di terminal dengan menjalankan ``` python bin/13519188_runner.py``` untuk Windows, OS lain menyesuaikan. Atau dapat juga dengan menjalankan `bin/13519188_runner.py` secara langsung.
 2. Program akan berjalan dan menampikan semua hasil dari _test case_ yang ada di folder `test`. Ubah isi folder `test` untuk mengubah hasil.
 
 ## Author

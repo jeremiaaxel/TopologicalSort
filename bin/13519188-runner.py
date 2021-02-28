@@ -1,8 +1,9 @@
 import os
+from pathlib import Path
 
-current_dir = os.getcwd()
-main_name = os.path.join(current_dir, "src", "main.py")
-test_folder = os.path.join(current_dir, "test")
+main_dir = Path(__file__).resolve().parent.parent
+main_name = os.path.join(main_dir, "src", "13519188.py")
+test_folder = os.path.join(main_dir, "test")
 test_files = [name for name in os.listdir(test_folder) if name.endswith('.txt')] 
 
 for test_file in test_files: 
